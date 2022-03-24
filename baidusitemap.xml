@@ -32,14 +32,14 @@
     
     
   <url>
-    <loc>https://neveryu.github.io/2016/12/24/why-introversion-like-alone/</loc>
+    <loc>https://neveryu.github.io/2017/02/14/why-we-dropped-zepto/</loc>
     <lastmod>2022-03-24T08:32:52.984Z</lastmod>
     <data>
         <display>
-        <title>【转】为什么一些生活中很外向开朗的人会喜欢独来独往</title>
-        <pubTime>2016-12-24T14:25:24.000Z</pubTime>
+        <title>【转】为什么我们放弃了 Zepto</title>
+        <pubTime>2017-02-13T17:25:24.000Z</pubTime>
         
-        <tag>essay</tag>
+        <tag>zepto</tag>
          
          
            
@@ -52,14 +52,14 @@
 
     
   <url>
-    <loc>https://neveryu.github.io/2017/02/14/why-we-dropped-zepto/</loc>
+    <loc>https://neveryu.github.io/2016/12/24/why-introversion-like-alone/</loc>
     <lastmod>2022-03-24T08:32:52.984Z</lastmod>
     <data>
         <display>
-        <title>【转】为什么我们放弃了 Zepto</title>
-        <pubTime>2017-02-13T17:25:24.000Z</pubTime>
+        <title>【转】为什么一些生活中很外向开朗的人会喜欢独来独往</title>
+        <pubTime>2016-12-24T14:25:24.000Z</pubTime>
         
-        <tag>zepto</tag>
+        <tag>essay</tag>
          
          
            
@@ -358,26 +358,6 @@
 
     
   <url>
-    <loc>https://neveryu.github.io/2018/06/01/js-this/</loc>
-    <lastmod>2022-03-24T08:32:52.976Z</lastmod>
-    <data>
-        <display>
-        <title>关于 JavaScript 中 this 的详细总结</title>
-        <pubTime>2018-05-31T19:25:24.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://neveryu.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://neveryu.github.io/2017/02/18/js-memory-management-and-gc/</loc>
     <lastmod>2022-03-24T08:32:52.976Z</lastmod>
     <data>
@@ -391,6 +371,26 @@
            
              
               <breadCrumb title="综合" url="https://neveryu.github.io/categories/%E7%BB%BC%E5%90%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://neveryu.github.io/2018/06/01/js-this/</loc>
+    <lastmod>2022-03-24T08:32:52.976Z</lastmod>
+    <data>
+        <display>
+        <title>关于 JavaScript 中 this 的详细总结</title>
+        <pubTime>2018-05-31T19:25:24.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://neveryu.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -425,9 +425,9 @@
         <title>【转】在2016年学JavaScript是一种什么样的体验</title>
         <pubTime>2016-10-16T15:25:24.000Z</pubTime>
         
-        <tag>essay</tag>
-         
         <tag>JavaScript</tag>
+         
+        <tag>essay</tag>
          
          
            
@@ -526,12 +526,12 @@
 
     
   <url>
-    <loc>https://neveryu.github.io/2016/12/15/hexo-next-four/</loc>
+    <loc>https://neveryu.github.io/2017/07/15/hexo-next-five/</loc>
     <lastmod>2022-03-24T08:32:52.971Z</lastmod>
     <data>
         <display>
-        <title>Hexo-NexT搭建个人博客（四）</title>
-        <pubTime>2016-12-15T15:25:24.000Z</pubTime>
+        <title>Hexo-NexT搭建个人博客（五）</title>
+        <pubTime>2017-07-15T15:25:24.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -548,12 +548,12 @@
 
     
   <url>
-    <loc>https://neveryu.github.io/2017/07/15/hexo-next-five/</loc>
+    <loc>https://neveryu.github.io/2016/12/15/hexo-next-four/</loc>
     <lastmod>2022-03-24T08:32:52.971Z</lastmod>
     <data>
         <display>
-        <title>Hexo-NexT搭建个人博客（五）</title>
-        <pubTime>2017-07-15T15:25:24.000Z</pubTime>
+        <title>Hexo-NexT搭建个人博客（四）</title>
+        <pubTime>2016-12-15T15:25:24.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -694,28 +694,6 @@
 
     
   <url>
-    <loc>https://neveryu.github.io/2016/11/18/china-javascript-environment/</loc>
-    <lastmod>2022-03-24T08:32:52.968Z</lastmod>
-    <data>
-        <display>
-        <title>中国国内 JavaScript 圈的现状如何</title>
-        <pubTime>2016-11-18T05:25:24.000Z</pubTime>
-        
-        <tag>essay</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="综合" url="https://neveryu.github.io/categories/%E7%BB%BC%E5%90%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://neveryu.github.io/2017/03/20/amd-cmd/</loc>
     <lastmod>2022-03-24T08:32:52.968Z</lastmod>
     <data>
@@ -729,6 +707,28 @@
            
              
               <breadCrumb title="前端" url="https://neveryu.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://neveryu.github.io/2016/11/18/china-javascript-environment/</loc>
+    <lastmod>2022-03-24T08:32:52.968Z</lastmod>
+    <data>
+        <display>
+        <title>中国国内 JavaScript 圈的现状如何</title>
+        <pubTime>2016-11-18T05:25:24.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>essay</tag>
+         
+         
+           
+             
+              <breadCrumb title="综合" url="https://neveryu.github.io/categories/%E7%BB%BC%E5%90%88/"/>
           
         </display>
     </data>
