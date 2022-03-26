@@ -58,10 +58,16 @@
   <entry>
     <title>PictureTest</title>
     <url>/2022/03/26/PictureTest/</url>
-    <content><![CDATA[<p>娓娓道来！</p>
+    <content><![CDATA[<p>娓娓道来</p>
 <span id="more"></span>
-<p><img src="/.io//image-20220326221134545.png" alt="image-20220326221134545"></p>
+<p><img src="/images/image-20220326223738830.png" alt="image-20220326223738830"></p>
+<p>$\sum_i^n$</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Test auto open</title>
+    <url>/2022/03/26/Test-auto-open/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>TestMath</title>
@@ -92,10 +98,5 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Test auto open</title>
-    <url>/2022/03/26/Test-auto-open/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
