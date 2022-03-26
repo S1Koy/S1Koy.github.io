@@ -64,9 +64,20 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Test auto open</title>
-    <url>/2022/03/26/Test-auto-open/</url>
-    <content><![CDATA[]]></content>
+    <title>TestMath</title>
+    <url>/2022/03/26/TestMath/</url>
+    <content><![CDATA[<p>听我娓娓道来…</p>
+<span id="more"></span>
+<p>$\sum_i^{n=5}\frac{1}{i}$</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line">x = a + b;</span><br><span class="line">String str;</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373">你好</a></p>
+]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -83,19 +94,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>TestMath</title>
-    <url>/2022/03/26/TestMath/</url>
-    <content><![CDATA[<p>听我娓娓道来…</p>
-<span id="more"></span>
-<p>$\sum_i^{n=5}\frac{1}{i}$</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line">x = a + b;</span><br><span class="line">String str;</span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373">你好</a></p>
-]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
+    <title>Test auto open</title>
+    <url>/2022/03/26/Test-auto-open/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
