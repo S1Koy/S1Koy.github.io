@@ -233,7 +233,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-28 00:16:05" itemprop="dateModified" datetime="2022-03-28T00:16:05+08:00">2022-03-28</time>
+                <time title="修改时间：2022-03-28 00:18:06" itemprop="dateModified" datetime="2022-03-28T00:18:06+08:00">2022-03-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -277,8 +277,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="2028-找出缺失的观测数据"><a href="#2028-找出缺失的观测数据" class="headerlink" title="2028. 找出缺失的观测数据"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-missing-observations/">2028. 找出缺失的观测数据</a></h4><p>思路：首先统计已有的总和，然后算出剩余需要的<code>res</code>，如果$res<n || res>6*n$就不可能了，然后看是否<code>res</code>能够均分到<code>n</code>个位置，如果能够最好，不能的话肯定有剩余<code>mod</code>，而且<code>mod</code>肯定小于<code>n</code>，也就是把余数每个位置放一个的策略是正确的。可以对余数再<code>for</code>一遍，也可以在放的时候直接搞定。</p>
-<p>$\sum_1^n$</p>
+          <h4 id="2028-找出缺失的观测数据"><a href="#2028-找出缺失的观测数据" class="headerlink" title="2028. 找出缺失的观测数据"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-missing-observations/">2028. 找出缺失的观测数据</a></h4><p>思路：首先统计已有的总和，然后算出剩余需要的<code>res</code>，如果 $res<n || res>6*n$ 就不可能了，然后看是否<code>res</code>能够均分到<code>n</code>个位置，如果能够最好，不能的话肯定有剩余<code>mod</code>，而且<code>mod</code>肯定小于<code>n</code>，也就是把余数每个位置放一个的策略是正确的。可以对余数再<code>for</code>一遍，也可以在放的时候直接搞定。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/#more" rel="contents">
