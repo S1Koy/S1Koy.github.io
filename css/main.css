@@ -1207,7 +1207,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff1dff;
+  background: #20ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2613,6 +2613,12 @@ mjx-container + br {
 .post-body a:hover {
   color: #f90;
   text-decoration: underline;
+}
+.link-blue {
+  color: #f36;
+}
+.link-blue:hover {
+  color: #f00;
 }
 code {
   color: #c7254e;
