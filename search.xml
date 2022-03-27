@@ -3,7 +3,7 @@
   <entry>
     <title>Hello</title>
     <url>/2022/03/26/Hello/</url>
-    <content><![CDATA[<h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><p>信息科学部主任郝跃院士强调了项目的重要意义，并指出针对“如何对复杂大数据深入研究分析”“如何理解复杂大数据规律”“如何应用在公共安全领域”等问题需要深入探讨和研究。郝跃院士就如何进一步梳理和凝练关键科学问题，聚焦核心关键技术等对项目提出建议，同时强调要做好项目进度把关，切实将核心技术创新用于解决现实应用场景下的关键问题。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><p>信息科学部主任郝跃院士强调了项目的重要意义，并指出针对“如何对复杂大数据深入研究分析”“如何理解复杂大数据规律”“如何应用在公共安全领域”等问题需要深入探讨和研究。郝跃院士就如何进一步梳理和凝练关键科学问题，聚焦核心关键技术等对项目提出建议，同时强调要做好项目进度把关，切实将核心技术创新用于解决现实应用场景下的关键问题。</p>
 <span id="more"></span>
 <h2 id="你好-1"><a href="#你好-1" class="headerlink" title="你好"></a>你好</h2><p>信息科学部常务副主任刘克对项目的实施提出具体要求，强调项目组要抓住主要问题，认真组织实施，落实好各课题责任，注重整体性，确保项目高质量完成。</p>
 <h3 id="你好-2"><a href="#你好-2" class="headerlink" title="你好"></a>你好</h3><h1 id="好的"><a href="#好的" class="headerlink" title="好的"></a>好的</h1><p>徐坤校长首先代表项目牵头单位对与会专家表示欢迎和衷心感谢，他介绍了北邮的科研工作开展情况。徐坤指出，牵头承担国家自然科学基金重大项目是学校科技创新能力提升的重要标志，是科技兴校战略突出成效的充分体现，对促进学校科技创新工作具有重要作用。徐坤强调，要通过项目的实施，进一步提升学校科技创新能力与优势科研团队培养能力，并表示学校将为项目的顺利实施提供有力的支持和保障。</p>
@@ -58,7 +58,7 @@
   <entry>
     <title>PictureTest</title>
     <url>/2022/03/26/PictureTest/</url>
-    <content><![CDATA[<p>娓娓道来</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>娓娓道来</p>
 <span id="more"></span>
 <p><img src="/images/image-20220326223738830.png" alt="image-20220326223738830"></p>
 <p>$\sum_i^n$</p>
@@ -67,12 +67,12 @@
   <entry>
     <title>Test auto open</title>
     <url>/2022/03/26/Test-auto-open/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
     <title>TestMath</title>
     <url>/2022/03/26/TestMath/</url>
-    <content><![CDATA[<p>听我娓娓道来…</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>听我娓娓道来…</p>
 <span id="more"></span>
 <p>$\sum_i^{n=5}\frac{1}{i}$</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="type">int</span> b;</span><br><span class="line">x = a + b;</span><br><span class="line">String str;</span><br></pre></td></tr></table></figure>
@@ -88,7 +88,7 @@
   <entry>
     <title>Hello World</title>
     <url>/2022/03/26/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
