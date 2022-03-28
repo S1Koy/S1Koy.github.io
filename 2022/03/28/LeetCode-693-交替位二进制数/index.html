@@ -23,15 +23,15 @@
     var CONFIG = {"hostname":"s1koy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="思路一：直接模拟取余，然后判断是否存在连续的0或1。 1234567891011class Solution &amp;#123;    public boolean hasAlternatingBits(int n) &amp;#123;        int mod &#x3D; -1;        while (n &gt; 0) &amp;#123;            if (n % 2 &#x3D;&#x3D; mod) return">
+  <meta name="description" content="693. 交替位二进制数思路一：直接模拟取余，然后判断是否存在连续的0或1。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 693. 交替位二进制数">
 <meta property="og:url" content="https://s1koy.github.io/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/index.html">
 <meta property="og:site_name" content="奥印安鱼">
-<meta property="og:description" content="思路一：直接模拟取余，然后判断是否存在连续的0或1。 1234567891011class Solution &amp;#123;    public boolean hasAlternatingBits(int n) &amp;#123;        int mod &#x3D; -1;        while (n &gt; 0) &amp;#123;            if (n % 2 &#x3D;&#x3D; mod) return">
+<meta property="og:description" content="693. 交替位二进制数思路一：直接模拟取余，然后判断是否存在连续的0或1。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-28T12:19:21.000Z">
-<meta property="article:modified_time" content="2022-03-28T12:26:53.369Z">
+<meta property="article:modified_time" content="2022-03-28T12:29:41.260Z">
 <meta property="article:author" content="奥印安鱼">
 <meta property="article:tag" content="二进制">
 <meta name="twitter:card" content="summary">
@@ -231,7 +231,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-03-28 20:19:21 / 修改时间：20:26:53" itemprop="dateCreated datePublished" datetime="2022-03-28T20:19:21+08:00">2022-03-28</time>
+              <time title="创建时间：2022-03-28 20:19:21 / 修改时间：20:29:41" itemprop="dateCreated datePublished" datetime="2022-03-28T20:19:21+08:00">2022-03-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -275,7 +275,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>思路一：直接模拟取余，然后判断是否存在连续的<code>0</code>或<code>1</code>。</p>
+        <h4 id="693-交替位二进制数"><a href="#693-交替位二进制数" class="headerlink" title="693. 交替位二进制数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-number-with-alternating-bits/">693. 交替位二进制数</a></h4><p>思路一：直接模拟取余，然后判断是否存在连续的<code>0</code>或<code>1</code>。</p>
+<span id="more"></span>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasAlternatingBits</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">mod</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (n &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (n % <span class="number">2</span> == mod) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            mod = n % <span class="number">2</span>;</span><br><span class="line">            n /= <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>思路二：考虑二进制。一开始的思路是直接搞出来最大的奇<code>10101010……1</code>串和偶<code>10101010……0</code>串，然后再与<code>n</code>直接进行操作不过好像有点麻烦，考虑了多种方式都无法实现，然后能搞出来的方法就有点麻烦了。索性看了题解：首先<code>n</code>右移一位，然后再与本身异或操作，如果是交替的话，就是全<code>1</code>串了，然后只需要判断是否全<code>1</code>即可。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasAlternatingBits</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> n ^ (n &gt;&gt; <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> ((x &amp; (x + <span class="number">1</span>)) == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -411,6 +412,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">693. 交替位二进制数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
