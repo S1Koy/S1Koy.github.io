@@ -23,20 +23,20 @@
     var CONFIG = {"hostname":"s1koy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="2028. 找出缺失的观测数据思路：首先统计已有的总和，然后算出剩余需要的res，如果\ res6*n\就不可能了，然后看是否res能够均分到n个位置，如果能够最好，不能的话肯定有剩余mod，而且mod肯定小于n，也就是把余数每个位置放一个的策略是正确的。可以对余数再for一遍，也可以在放的时候直接搞定。">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384import java.io.OutputStream;import java.i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 2028. 找出缺失的观测数据">
-<meta property="og:url" content="https://s1koy.github.io/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/index.html">
+<meta property="og:title" content="Code">
+<meta property="og:url" content="https://s1koy.github.io/2022/04/01/Code/index.html">
 <meta property="og:site_name" content="奥印安鱼">
-<meta property="og:description" content="2028. 找出缺失的观测数据思路：首先统计已有的总和，然后算出剩余需要的res，如果\ res6*n\就不可能了，然后看是否res能够均分到n个位置，如果能够最好，不能的话肯定有剩余mod，而且mod肯定小于n，也就是把余数每个位置放一个的策略是正确的。可以对余数再for一遍，也可以在放的时候直接搞定。">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384import java.io.OutputStream;import java.i">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-27T15:40:30.000Z">
-<meta property="article:modified_time" content="2022-03-28T04:07:16.235Z">
+<meta property="article:published_time" content="2022-04-01T06:17:58.000Z">
+<meta property="article:modified_time" content="2022-04-01T06:20:53.232Z">
 <meta property="article:author" content="奥印安鱼">
-<meta property="article:tag" content="构造">
+<meta property="article:tag" content="奥印安鱼">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://s1koy.github.io/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/">
+<link rel="canonical" href="https://s1koy.github.io/2022/04/01/Code/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>LeetCode 2028. 找出缺失的观测数据 | 奥印安鱼</title>
+  <title>Code | 奥印安鱼</title>
   
 
 
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://s1koy.github.io/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/">
+    <link itemprop="mainEntityOfPage" href="https://s1koy.github.io/2022/04/01/Code/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -220,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LeetCode 2028. 找出缺失的观测数据
+          Code
         </h1>
 
         <div class="post-meta">
@@ -229,28 +229,13 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-27 23:40:30" itemprop="dateCreated datePublished" datetime="2022-03-27T23:40:30+08:00">2022-03-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-28 12:07:16" itemprop="dateModified" datetime="2022-03-28T12:07:16+08:00">2022-03-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-                </span>
+              <time title="创建时间：2022-04-01 14:17:58 / 修改时间：14:20:53" itemprop="dateCreated datePublished" datetime="2022-04-01T14:17:58+08:00">2022-04-01</time>
             </span>
 
           
-            <span id="/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/" class="post-meta-item leancloud_visitors" data-flag-title="LeetCode 2028. 找出缺失的观测数据" title="阅读次数">
+            <span id="/2022/04/01/Code/" class="post-meta-item leancloud_visitors" data-flag-title="Code" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -265,8 +250,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/04/01/Code/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/01/Code/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -281,9 +266,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="2028-找出缺失的观测数据"><a href="#2028-找出缺失的观测数据" class="headerlink" title="2028. 找出缺失的观测数据"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-missing-observations/">2028. 找出缺失的观测数据</a></h4><p>思路：首先统计已有的总和，然后算出剩余需要的<code>res</code>，如果<script type="math/tex">\ res<n || res>6*n\</script>就不可能了，然后看是否<code>res</code>能够均分到<code>n</code>个位置，如果能够最好，不能的话肯定有剩余<code>mod</code>，而且<code>mod</code>肯定小于<code>n</code>，也就是把余数每个位置放一个的策略是正确的。可以对余数再<code>for</code>一遍，也可以在放的时候直接搞定。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] missingRolls(<span class="type">int</span>[] rolls, <span class="type">int</span> mean, <span class="type">int</span> n) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> x: rolls) &#123;</span><br><span class="line">            sum += x;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> rolls.length;</span><br><span class="line">        <span class="type">int</span> <span class="variable">res</span> <span class="operator">=</span> (n + m) * mean - sum;</span><br><span class="line">        <span class="keyword">if</span> (res &lt; n || res &gt; n * <span class="number">6</span>) <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;&#125;;</span><br><span class="line">        <span class="type">int</span>[] ans = <span class="keyword">new</span> <span class="title class_">int</span>[n];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            ans[i] = res % n == <span class="number">0</span> ? res / n : res-- / n + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"><span class="keyword">import</span> java.util.StringTokenizer;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStreamReader;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Built using CHelper plug-in</span></span><br><span class="line"><span class="comment"> * Actual solution is at the top</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> S1Koy</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">InputStream</span> <span class="variable">inputStream</span> <span class="operator">=</span> System.in;</span><br><span class="line">        <span class="type">OutputStream</span> <span class="variable">outputStream</span> <span class="operator">=</span> System.out;</span><br><span class="line">        <span class="type">InputReader</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">InputReader</span>(inputStream);</span><br><span class="line">        <span class="type">PrintWriter</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PrintWriter</span>(outputStream);</span><br><span class="line">        <span class="type">TaskB</span> <span class="variable">solver</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">TaskB</span>();</span><br><span class="line">        <span class="type">int</span> <span class="variable">testCount</span> <span class="operator">=</span> Integer.parseInt(in.next());</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= testCount; i++)</span><br><span class="line">            solver.solve(i, in, out);</span><br><span class="line">        out.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">TaskB</span> &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">solve</span><span class="params">(<span class="type">int</span> testNumber, InputReader in, PrintWriter out)</span> &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">            <span class="type">int</span>[] arr = <span class="keyword">new</span> <span class="title class_">int</span>[n];</span><br><span class="line">            <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = <span class="number">0</span>, cr = <span class="number">0</span>;</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">                x = in.nextInt();</span><br><span class="line">                <span class="keyword">if</span> (x == r) l = x;</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line"><span class="comment">//                if (x &gt; r) &#123;</span></span><br><span class="line"><span class="comment">//                    l = r;</span></span><br><span class="line"><span class="comment">//                    r = x;</span></span><br><span class="line"><span class="comment">//                &#125; else &#123;</span></span><br><span class="line"><span class="comment">//                    l = Math.max(l, x);</span></span><br><span class="line"><span class="comment">//                &#125;</span></span><br><span class="line">                    r = Math.max(r, x);</span><br><span class="line">                    l = r == x ? cr : Math.max(l, x);</span><br><span class="line">                &#125;</span><br><span class="line">                cr = r;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (r - l &lt; <span class="number">2</span>) out.println(<span class="string">&quot;YES&quot;</span>);</span><br><span class="line">            <span class="keyword">else</span> out.println(<span class="string">&quot;NO&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">InputReader</span> &#123;</span><br><span class="line">        <span class="keyword">public</span> BufferedReader reader;</span><br><span class="line">        <span class="keyword">public</span> StringTokenizer tokenizer;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="title function_">InputReader</span><span class="params">(InputStream stream)</span> &#123;</span><br><span class="line">            reader = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(stream), <span class="number">32768</span>);</span><br><span class="line">            tokenizer = <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> String <span class="title function_">next</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (tokenizer == <span class="literal">null</span> || !tokenizer.hasMoreTokens()) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    tokenizer = <span class="keyword">new</span> <span class="title class_">StringTokenizer</span>(reader.readLine());</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(e);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tokenizer.nextToken();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">nextInt</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> Integer.parseInt(next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -331,7 +314,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://s1koy.github.io/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/" title="LeetCode 2028. 找出缺失的观测数据">https://s1koy.github.io/2022/03/27/LeetCode-2028-找出缺失的观测数据/</a>
+    <a href="https://s1koy.github.io/2022/04/01/Code/" title="Code">https://s1koy.github.io/2022/04/01/Code/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -342,21 +325,17 @@
 
 
       <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/%E6%9E%84%E9%80%A0/" rel="tag"><i class="fa fa-tag"></i> 构造</a>
-          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/" rel="next" title="LeetCode 693. 交替位二进制数">
-      LeetCode 693. 交替位二进制数 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/03/29/%E4%BA%8C%E5%88%86%E6%80%BB%E7%BB%93/" rel="prev" title="二分总结">
+      <i class="fa fa-chevron-left"></i> 二分总结
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -416,7 +395,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text">2028. 找出缺失的观测数据</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -736,61 +714,6 @@
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
