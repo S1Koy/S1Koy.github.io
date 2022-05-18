@@ -23,20 +23,20 @@
     var CONFIG = {"hostname":"s1koy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="693. 交替位二进制数思路一：直接模拟取余，然后判断是否存在连续的0或1。">
+  <meta name="description" content="668. 乘法表中第k小的数思路：第一眼第k大就是直接就说主席树，然后发现数据范围很大，然后在考虑看成树的样子，虽然不可行，不过这样是计算正解的的一种方法，最后就想通过筛数来搞，发现不可能，直接看题解吧…… 正解：数据范围太大，直接二分答案，设第k大的数为x，则$\le x$的数字个数不超过k个，因为每一行的数都是该行第一个数的递增倍数，所以当前行\le x的个数为\lfloor \frac{x}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 693. 交替位二进制数">
-<meta property="og:url" content="https://s1koy.github.io/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/index.html">
+<meta property="og:title" content="LeetCode 668. 乘法表中第k小的数">
+<meta property="og:url" content="https://s1koy.github.io/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/index.html">
 <meta property="og:site_name" content="奥印安鱼">
-<meta property="og:description" content="693. 交替位二进制数思路一：直接模拟取余，然后判断是否存在连续的0或1。">
+<meta property="og:description" content="668. 乘法表中第k小的数思路：第一眼第k大就是直接就说主席树，然后发现数据范围很大，然后在考虑看成树的样子，虽然不可行，不过这样是计算正解的的一种方法，最后就想通过筛数来搞，发现不可能，直接看题解吧…… 正解：数据范围太大，直接二分答案，设第k大的数为x，则$\le x$的数字个数不超过k个，因为每一行的数都是该行第一个数的递增倍数，所以当前行\le x的个数为\lfloor \frac{x}">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-28T12:19:21.000Z">
-<meta property="article:modified_time" content="2022-04-07T02:28:41.359Z">
+<meta property="article:published_time" content="2022-05-18T14:41:47.000Z">
+<meta property="article:modified_time" content="2022-05-18T15:07:10.380Z">
 <meta property="article:author" content="奥印安鱼">
-<meta property="article:tag" content="二进制">
+<meta property="article:tag" content="二分">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://s1koy.github.io/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/">
+<link rel="canonical" href="https://s1koy.github.io/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>LeetCode 693. 交替位二进制数 | 奥印安鱼</title>
+  <title>LeetCode 668. 乘法表中第k小的数 | 奥印安鱼</title>
   
 
 
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://s1koy.github.io/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/">
+    <link itemprop="mainEntityOfPage" href="https://s1koy.github.io/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -220,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LeetCode 693. 交替位二进制数
+          LeetCode 668. 乘法表中第k小的数
         </h1>
 
         <div class="post-meta">
@@ -229,16 +229,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-28 20:19:21" itemprop="dateCreated datePublished" datetime="2022-03-28T20:19:21+08:00">2022-03-28</time>
+              <time title="创建时间：2022-05-18 22:41:47 / 修改时间：23:07:10" itemprop="dateCreated datePublished" datetime="2022-05-18T22:41:47+08:00">2022-05-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-07 10:28:41" itemprop="dateModified" datetime="2022-04-07T10:28:41+08:00">2022-04-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -250,7 +244,7 @@
             </span>
 
           
-            <span id="/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/" class="post-meta-item leancloud_visitors" data-flag-title="LeetCode 693. 交替位二进制数" title="阅读次数">
+            <span id="/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/" class="post-meta-item leancloud_visitors" data-flag-title="LeetCode 668. 乘法表中第k小的数" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -265,8 +259,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -281,11 +275,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="693-交替位二进制数"><a href="#693-交替位二进制数" class="headerlink" title="693. 交替位二进制数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-number-with-alternating-bits/">693. 交替位二进制数</a></h4><p>思路一：直接模拟取余，然后判断是否存在连续的<script type="math/tex">0</script>或<script type="math/tex">1</script>。</p>
-<span id="more"></span>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasAlternatingBits</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">mod</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (n &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (n % <span class="number">2</span> == mod) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            mod = n % <span class="number">2</span>;</span><br><span class="line">            n /= <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>思路二：考虑二进制。一开始的思路是直接搞出来最大的奇<script type="math/tex">10101010……1</script>串和偶<script type="math/tex">10101010……0</script>串，然后再与<script type="math/tex">n</script>直接进行操作不过好像有点麻烦，考虑了多种方式都无法实现，然后能搞出来的方法就有点麻烦了。索性看了题解：首先<script type="math/tex">n</script>右移一位，然后再与本身异或操作，如果是交替的话，就是全<script type="math/tex">1</script>串了，然后只需要判断是否全<script type="math/tex">1</script>即可。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">hasAlternatingBits</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> n ^ (n &gt;&gt; <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> ((x &amp; (x + <span class="number">1</span>)) == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h4 id="668-乘法表中第k小的数"><a href="#668-乘法表中第k小的数" class="headerlink" title="668. 乘法表中第k小的数"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/">668. 乘法表中第k小的数</a></h4><p>思路：第一眼第<script type="math/tex">k</script>大就是直接就说主席树，然后发现数据范围很大，然后在考虑看成树的样子，虽然不可行，不过这样是计算正解的的一种方法，最后就想通过筛数来搞，发现不可能，直接看题解吧……</p>
+<p>正解：数据范围太大，直接二分答案，设第<script type="math/tex">k</script>大的数为<script type="math/tex">x</script>，则$\le x$的数字个数不超过<script type="math/tex">k</script>个，因为每一行的数都是该行第一个数的递增倍数，所以当前行<script type="math/tex">\le x</script>的个数为<script type="math/tex">\lfloor \frac{x}{i} \rfloor</script>，差点以为自己的二分有问题，发现求得就是左边界，搞错了，可能是饿的了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">findKthNumber</span><span class="params">(<span class="type">int</span> m, <span class="type">int</span> n, <span class="type">int</span> k)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">1</span>, r = m * n + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (l &lt; r) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> (r - l) / <span class="number">2</span> + l;</span><br><span class="line">            <span class="keyword">if</span> (check(m, n, mid, k)) &#123;</span><br><span class="line">                r = mid;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                l = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> l;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">check</span><span class="params">(<span class="type">int</span> m, <span class="type">int</span> n, <span class="type">int</span> x, <span class="type">int</span> k)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">cnt</span> <span class="operator">=</span> x / n * n;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> x / n + <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">            cnt += x / i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt &gt;= k;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -333,7 +325,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://s1koy.github.io/2022/03/28/LeetCode-693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0/" title="LeetCode 693. 交替位二进制数">https://s1koy.github.io/2022/03/28/LeetCode-693-交替位二进制数/</a>
+    <a href="https://s1koy.github.io/2022/05/18/LeetCode-668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0/" title="LeetCode 668. 乘法表中第k小的数">https://s1koy.github.io/2022/05/18/LeetCode-668-乘法表中第k小的数/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -346,7 +338,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" rel="tag"><i class="fa fa-tag"></i> 二进制</a>
+              <a href="/tags/%E4%BA%8C%E5%88%86/" rel="tag"><i class="fa fa-tag"></i> 二分</a>
           </div>
 
         
@@ -355,13 +347,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/27/LeetCode-2028-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%A7%82%E6%B5%8B%E6%95%B0%E6%8D%AE/" rel="prev" title="LeetCode 2028. 找出缺失的观测数据">
-      <i class="fa fa-chevron-left"></i> LeetCode 2028. 找出缺失的观测数据
+    <a href="/2022/05/13/LeetCode-22-%E6%8B%AC%E5%8F%B7%E7%94%9F%E6%88%90/" rel="prev" title="LeetCode 22. 括号生成">
+      <i class="fa fa-chevron-left"></i> LeetCode 22. 括号生成
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/03/29/%E4%BA%8C%E5%88%86%E6%80%BB%E7%BB%93/" rel="next" title="二分总结">
-      二分总结 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -421,7 +410,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#693-%E4%BA%A4%E6%9B%BF%E4%BD%8D%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">693. 交替位二进制数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#668-%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">668. 乘法表中第k小的数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
