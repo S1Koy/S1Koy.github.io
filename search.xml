@@ -244,7 +244,7 @@ dp[i][j][z] = (dp[i][j][z] + dp[i][j - 1][((z - grid[i][j] \% k) + k) \% k]) \% 
 <ul>
 <li>为什么没有返回$-1$操作，如果$nums$里不存在$target$呢？</li>
 </ul>
-<p><img src="/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021150442699.png" alt="image-20221021150442699"></p>
+<p><img src="/images/image-20221021150442699.png" alt="image-20221021150442699"></p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">对于上述nums，会返回1，可以解读为小于2的元素有1个。又比如nums=[2,3,5,7]，target=1，算法会返回0，即小于1的元素有0个，再比如nums不变，target=8，算法会返回4，即小于8的元素有4个。</span><br><span class="line"></span><br><span class="line">综上可以看出，函数的返回值的取值范围在[0,nums.length]，所以我们可以特判，就可以返回-1了。</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (l == nums.length) <span class="keyword">return</span> -<span class="number">1</span>; <span class="comment">//target比所有数都大</span></span><br><span class="line"><span class="keyword">return</span> nums[l] == target ? l : -<span class="number">1</span>; <span class="comment">// target比所有数都小</span></span><br></pre></td></tr></table></figure>
 <ul>
@@ -267,7 +267,7 @@ dp[i][j][z] = (dp[i][j][z] + dp[i][j - 1][((z - grid[i][j] \% k) + k) \% k]) \% 
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">首先，终止条件是l==r,如果非要体现右边界，写成r-1也可以。</span><br></pre></td></tr></table></figure>
 <p>​    但是为什么要$-1$呢?  主要是这个条件判断</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (nums[mid] == target) &#123;</span><br><span class="line">    l = mid + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021152421316.png" alt="image-20221021152421316"></p>
+<p><img src="/images/image-20221021152421316.png" alt="image-20221021152421316"></p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">对l的更新必须是l=mid+1,因为最后l一定是不等于target的，但是nums[l-1]可能是target</span><br></pre></td></tr></table></figure>
 <ul>
 <li>为什么没有返回$-1$操作？</li>
