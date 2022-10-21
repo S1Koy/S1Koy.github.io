@@ -23,16 +23,21 @@
     var CONFIG = {"hostname":"s1koy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="二分总结之间总结过一次，以为是最好的解释，最后看了一个知乎回答，发现有更好的解释。连接 【1】寻找一个数如$nums &#x3D; [1,3,3,5,8]$，下标从$0$开始，找$3$ 12345678int l &#x3D; 0, r &#x3D; nums.length - 1;while (l &lt;&#x3D; r) &amp;#123;    int mid &#x3D; (r - l) &#x2F; 2 + l;    if (nums[mid] &#x3D;">
+<meta property="og:type" content="article">
 <meta property="og:title" content="二分总结">
 <meta property="og:url" content="https://s1koy.github.io/2022/03/29/%E4%BA%8C%E5%88%86%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="奥印安鱼">
+<meta property="og:description" content="二分总结之间总结过一次，以为是最好的解释，最后看了一个知乎回答，发现有更好的解释。连接 【1】寻找一个数如$nums &#x3D; [1,3,3,5,8]$，下标从$0$开始，找$3$ 12345678int l &#x3D; 0, r &#x3D; nums.length - 1;while (l &lt;&#x3D; r) &amp;#123;    int mid &#x3D; (r - l) &#x2F; 2 + l;    if (nums[mid] &#x3D;">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1koy.github.io/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021150442699.png">
+<meta property="og:image" content="https://s1koy.github.io/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021152421316.png">
 <meta property="article:published_time" content="2022-03-29T14:58:43.000Z">
-<meta property="article:modified_time" content="2022-03-29T16:11:26.826Z">
+<meta property="article:modified_time" content="2022-10-21T07:29:47.045Z">
 <meta property="article:author" content="奥印安鱼">
 <meta property="article:tag" content="二分">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1koy.github.io/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021150442699.png">
 
 <link rel="canonical" href="https://s1koy.github.io/2022/03/29/%E4%BA%8C%E5%88%86%E6%80%BB%E7%BB%93/">
 
@@ -235,7 +240,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-30 00:11:26" itemprop="dateModified" datetime="2022-03-30T00:11:26+08:00">2022-03-30</time>
+                <time title="修改时间：2022-10-21 15:29:47" itemprop="dateModified" datetime="2022-10-21T15:29:47+08:00">2022-10-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -279,7 +284,60 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h2 id="二分总结"><a href="#二分总结" class="headerlink" title="二分总结"></a>二分总结</h2><p>之间总结过一次，以为是最好的解释，最后看了一个知乎回答，发现有更好的解释。<a target="_blank" rel="noopener" href="https://www.zhihu.com/answer/712269942">连接</a></p>
+<h3 id="【1】寻找一个数"><a href="#【1】寻找一个数" class="headerlink" title="【1】寻找一个数"></a>【1】寻找一个数</h3><p>如$nums = [1,3,3,5,8]$，下标从$0$开始，找$3$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = nums.length - <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (l &lt;= r) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> (r - l) / <span class="number">2</span> + l;</span><br><span class="line">    <span class="keyword">if</span> (nums[mid] == target) <span class="keyword">return</span> mid;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (nums[mid] &lt; target) l = mid + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> r = mid - <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> -<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么循环条件是$\le$，而不是$&lt;$</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为r为nums.length-1，不是nums.lenght。前者相当于是闭区间[l,r]，而后者则是开区间[l,r)，因此这里是小于等于。也就是每一次的搜索区间。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>终止条件</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果是大于等于，那么终止条件就是l = r + 1,即[r + 1, r]，代入具体数值即[3,2]，此时区间为空。但如果是小于的话，那么终止条件就是l = r, 即[l, r]，代入具体数值即[2,2]，此时区间非空，漏掉了2，如果直接返回-1就是错误的，如果要这样写，最后要再判断一下漏掉的情况即，</span><br><span class="line">return nums[l] == target ? l : -1;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么$l=mid + 1$，$r =mid-1$?</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首先明确了[搜索区间]的概念，现在是闭区间搜索，mid已经可以排除，所以分割区间为[l,mid-1]和[mid+1,r]</span><br></pre></td></tr></table></figure>
+<p><strong>局限性</strong>：该算法无法找到最左边的$target$或者最右边的$target$。</p>
+<h3 id="【2】寻找左侧边界"><a href="#【2】寻找左侧边界" class="headerlink" title="【2】寻找左侧边界"></a>【2】寻找左侧边界</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = nums.length;</span><br><span class="line">whiel (l &lt; r) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> (r - l) / <span class="number">2</span> + l;</span><br><span class="line">    <span class="keyword">if</span> (nums[mid] &gt;= target) r = mid;</span><br><span class="line">    <span class="keyword">else</span> l = mid + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> l;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么是$&lt;$？</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为r=nums.length,所以每次搜索区间为[l,r),而终止条件为l=r,即[l,r),此时区间为空，所以可以正确终止。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么没有返回$-1$操作，如果$nums$里不存在$target$呢？</li>
+</ul>
+<p><img src="/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021150442699.png" alt="image-20221021150442699"></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对于上述nums，会返回1，可以解读为小于2的元素有1个。又比如nums=[2,3,5,7]，target=1，算法会返回0，即小于1的元素有0个，再比如nums不变，target=8，算法会返回4，即小于8的元素有4个。</span><br><span class="line"></span><br><span class="line">综上可以看出，函数的返回值的取值范围在[0,nums.length]，所以我们可以特判，就可以返回-1了。</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (l == nums.length) <span class="keyword">return</span> -<span class="number">1</span>; <span class="comment">//target比所有数都大</span></span><br><span class="line"><span class="keyword">return</span> nums[l] == target ? l : -<span class="number">1</span>; <span class="comment">// target比所有数都小</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么这里是$l=mid+1$，$r =mid$呢？</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为搜索区间是[l,r)左闭右开，所以当mid被监测后，区间被分割为[l, mid)和[mid + 1, r)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么可以搜索左边界？</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为在nums[mid]==target的时候，没有立即返回，而是缩小[搜索区间]的上界right，在区间[l,mid)中继续搜索,不断向左搜搜，达到锁定左边界</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么返回$l$而不是$r$？</li>
+</ul>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">终止条件为l==r,因此返回哪一个都可以。</span><br></pre></td></tr></table></figure>
+<h3 id="【3】寻找右侧边界"><a href="#【3】寻找右侧边界" class="headerlink" title="【3】寻找右侧边界"></a>【3】寻找右侧边界</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = nums.length;</span><br><span class="line">whiel (l &lt; r) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> (r - l) / <span class="number">2</span> + l;</span><br><span class="line">    <span class="keyword">if</span> (nums[mid] &lt;= target) l = mid + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> r = mid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> l - <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>基本上和寻找左侧边界一致，只是收缩的方向有所区别。</p>
+<ul>
+<li>为什么最后是$l-1$？而不是$l$？或者是$r-1$呢？</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首先，终止条件是l==r,如果非要体现右边界，写成r-1也可以。</span><br></pre></td></tr></table></figure>
+<p>​    但是为什么要$-1$呢?  主要是这个条件判断</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (nums[mid] == target) &#123;</span><br><span class="line">    l = mid + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/C:/Users/Admin/AppData/Roaming/Typora/typora-user-images/image-20221021152421316.png" alt="image-20221021152421316"></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对l的更新必须是l=mid+1,因为最后l一定是不等于target的，但是nums[l-1]可能是target</span><br></pre></td></tr></table></figure>
+<ul>
+<li>为什么没有返回$-1$操作？</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">返回值范围为[0,nums.length]，我们可以做特判来返回正确的结果</span><br><span class="line">if (l == 0) return -1; </span><br><span class="line">return nums[l - 1] == target ? l - 1 : -1;</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -414,6 +472,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">二分总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%80%901%E3%80%91%E5%AF%BB%E6%89%BE%E4%B8%80%E4%B8%AA%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">【1】寻找一个数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%80%902%E3%80%91%E5%AF%BB%E6%89%BE%E5%B7%A6%E4%BE%A7%E8%BE%B9%E7%95%8C"><span class="nav-number">1.2.</span> <span class="nav-text">【2】寻找左侧边界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%80%903%E3%80%91%E5%AF%BB%E6%89%BE%E5%8F%B3%E4%BE%A7%E8%BE%B9%E7%95%8C"><span class="nav-number">1.3.</span> <span class="nav-text">【3】寻找右侧边界</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
